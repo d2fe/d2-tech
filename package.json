@@ -1,0 +1,83 @@
+{
+  "name": "tristan-yang-blog",
+  "description": "Tristan Yang Blog",
+  "version": "2.2.0",
+  "author": "Tristan Yang <yanggc888@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/zerosoul/blog.yangerxiao.com/issues"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
+    "darkmode-js": "^1.4.0",
+    "gatsby": "^2.13.28",
+    "gatsby-image": "^2.2.6",
+    "gatsby-paginate": "^1.1.0",
+    "gatsby-plugin-baidu-analytics": "^2.2.0",
+    "gatsby-plugin-catch-links": "^2.1.2",
+    "gatsby-plugin-favicon": "^3.1.6",
+    "gatsby-plugin-feed": "^2.3.4",
+    "gatsby-plugin-google-analytics": "^2.1.4",
+    "gatsby-plugin-manifest": "^2.2.3",
+    "gatsby-plugin-offline": "^2.2.4",
+    "gatsby-plugin-react-helmet": "^3.0.5",
+    "gatsby-plugin-sharp": "^2.2.8",
+    "gatsby-plugin-sitemap": "^2.2.3",
+    "gatsby-plugin-styled-components": "^3.1.2",
+    "gatsby-plugin-typography": "^2.2.5",
+    "gatsby-remark-autolink-headers": "^2.1.3",
+    "gatsby-remark-copy-linked-files": "^2.1.3",
+    "gatsby-remark-images": "^3.1.6",
+    "gatsby-remark-prismjs": "^3.2.0",
+    "gatsby-remark-responsive-iframe": "^2.2.4",
+    "gatsby-remark-smartypants": "^2.1.2",
+    "gatsby-source-filesystem": "^2.1.5",
+    "gatsby-transformer-remark": "^2.2.0",
+    "gatsby-transformer-sharp": "^2.2.4",
+    "gitalk": "^1.5.0",
+    "lodash": "^4.17.11",
+    "polished": "^3.4.1",
+    "prismjs": "^1.17.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-slick": "^0.24.0",
+    "react-typography": "^0.16.18",
+    "styled-components": "^4.3.2",
+    "typography": "^0.16.18"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "eslint": "^6.0.1",
+    "eslint-plugin-react": "^7.14.2",
+    "husky": "^3.0.1",
+    "lint-staged": "^9.2.0"
+  },
+  "homepage": "https://blog.yangerxiao.com",
+  "keywords": [
+    "blog",
+    "react.js",
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zerosoul/blog.yangerxiao.com.git"
+  },
+  "scripts": {
+    "clean": "rm -rf public .cache *.log .DS_Store",
+    "dev": "gatsby clean && gatsby develop",
+    "build": "gatsby build",
+    "rebuild": "yarn install && yarn build",
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  }
+}
