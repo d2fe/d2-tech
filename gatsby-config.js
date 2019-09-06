@@ -10,8 +10,8 @@ module.exports = {
   polyfill: false,
   siteMetadata: {
     siteUrl: config.siteUrl,
-    title: `杨二的个人博客`,
-    description: `记录生活，见证成长。`
+    title: `壹点壹滴技术团队网站`,
+    description: `技术创造价值，细节提升体验。`
   },
   plugins: [
     {

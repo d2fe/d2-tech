@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Wrapper>
-      <Helmet title={`杨二的个人博客 | ${config.siteTitle}`} />
+      <Helmet title={`壹点壹滴技术团队 | ${config.siteTitle}`} />
       <SectionTitle>最近更新</SectionTitle>
       {posts.map(({ node: post }) => {
         const { slug } = post.frontmatter;
