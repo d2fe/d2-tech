@@ -1,15 +1,15 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { graphql } from 'gatsby';
-import styled from 'styled-components';
-import Img from 'gatsby-image';
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import styled from "styled-components";
+import Img from "gatsby-image";
 
-import Gitalk from '../components/Gitalk';
-import Wrapper from '../components/Wrapper';
-import Subline from '../components/Subline';
-import Slider from '../components/Slider';
-import { media } from '../utils/media';
-import config from '../../config/SiteConfig';
+import Gitalk from "../components/Gitalk";
+import Wrapper from "../components/Wrapper";
+import Subline from "../components/Subline";
+import Slider from "../components/Slider";
+import { media } from "../utils/media";
+import config from "../../config/SiteConfig";
 
 const Container = styled.div`
   @media ${media.desktop} {
@@ -44,19 +44,19 @@ const Content = styled.div`
 `;
 const About = ({ data }) => (
   <Wrapper>
-    <Helmet title={`关于我 | ${config.siteTitle}`} />
+    <Helmet title={`关于我们 | ${config.siteTitle}`} />
     <Container>
-      <Subline sectionTitle>也许，我们能成为朋友。</Subline>
+      <Subline sectionTitle>欢迎加入我们</Subline>
       <Slider
         imgs={data.slideImgs.edges.map(img => (
-          <Img fluid={img.node.fluid} key={img.node.fluid.src} alt="关于我" />
+          <Img fluid={img.node.fluid} key={img.node.fluid.src} alt="关于我们" />
         ))}
       />
 
       <Header>联系方式</Header>
       <Content>
         <dt>邮箱：</dt>
-        <dd>yanggc888#163.com</dd>
+        <dd>yangguochun#1d1d100.com</dd>
       </Content>
       <Content>
         <dt>微信：</dt>

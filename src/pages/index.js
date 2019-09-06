@@ -1,11 +1,11 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Helmet from 'react-helmet';
-import config from '../../config/SiteConfig';
+import React from "react";
+import { graphql } from "gatsby";
+import Helmet from "react-helmet";
+import config from "../../config/SiteConfig";
 
-import Article from '../components/Article';
-import Wrapper from '../components/Wrapper';
-import SectionTitle from '../components/SectionTitle';
+import Article from "../components/Article";
+import Wrapper from "../components/Wrapper";
+import SectionTitle from "../components/SectionTitle";
 
 const IndexPage = ({ data }) => {
   // console.log(data);
@@ -49,7 +49,6 @@ export const updateRecentlyQuery = graphql`
           timeToRead
           frontmatter {
             slug
-            cover
             date(formatString: "YYYY/MM/DD hh:mm")
             title
             tags

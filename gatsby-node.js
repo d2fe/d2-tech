@@ -36,7 +36,7 @@ exports.createPages = ({ graphql, actions }) => {
                   date
                   category
                   tags
-                  cover
+                  draft
                 }
                 tableOfContents
                 excerpt(pruneLength: 150)
@@ -45,6 +45,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       `).then(result => {
+        console.log("MD result:", result);
         if (result.errors) {
           console.log(result.errors);
           reject(result.errors);

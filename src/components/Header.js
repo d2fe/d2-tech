@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'gatsby';
-import { lighten } from 'polished';
-import Navs from './Navs';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
+import { lighten } from "polished";
+import Navs from "./Navs";
 
 const Wrapper = styled.header`
   margin: 0 auto;
@@ -24,7 +24,7 @@ const Hero = styled.div`
     }
   }
   .slogan {
-    color: ${lighten(0.3, '#333')};
+    color: ${lighten(0.3, "#333")};
     margin-bottom: 0.4rem;
   }
 `;
@@ -34,11 +34,11 @@ const Header = props => (
     <Hero>
       <h1 className="site">
         <Link to="/" className="title">
-          杨二
+          D2FE
         </Link>
       </h1>
       <div className="slogan">
-        <span>Machine repeats, Human creates</span>
+        <span>科技创造价值 细节提升体验</span>
       </div>
     </Hero>
     <Navs />

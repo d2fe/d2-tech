@@ -1,11 +1,12 @@
 ---
 slug: "javascript symbol"
-date: "2018-1-29 20:32:58"
+date: "2019-1-29 20:32:58"
 category: "技术"
 tags:
   - ES6
   - javascript
   - 备忘
+draft: false
 ---
 
 # ES6 第七种数据类型：Symbol
